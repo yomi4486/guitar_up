@@ -10,7 +10,7 @@ class PracticeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GuitarUp - 練習'),
+        title: const Text('練習を開始'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -26,9 +26,9 @@ class PracticeScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       Icon(
-                        Icons.music_note,
+                        Icons.check,
                         size: 64,
-                        color: Theme.of(context).colorScheme.primary,
+                        color: Theme.of(context).colorScheme.secondary,
                       ),
                       const SizedBox(height: 16),
                       Text(

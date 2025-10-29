@@ -12,9 +12,9 @@ class RecordsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GuitarUp - 記録'),
+        title: const Text('練習記録'),
       ),
-      floatingActionButton: FloatingActionButton(
+  floatingActionButton: FloatingActionButton(
         onPressed: () async {
           final result = await Navigator.push(
             context,
@@ -27,7 +27,8 @@ class RecordsScreen extends StatelessWidget {
             provider.loadRecords();
           }
         },
-        child: const Icon(Icons.add),
+  shape: const CircleBorder(),
+  child: const Icon(Icons.add),
         tooltip: '新しい記録を追加',
       ),
       body: Consumer<PracticeRecordsProvider>(
@@ -99,7 +100,7 @@ class RecordsScreen extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    record.title ?? '無題',
+                                    record.title ?? "${DateFormat('yyyy/MM/dd').format(record.dateTime)}の練習",
                                     style: const TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
