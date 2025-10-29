@@ -1,9 +1,9 @@
-# GuiterUp - 開発ドキュメント
+# GuitarUp - 開発ドキュメント
 
 ## プロジェクト構造
 
 ```
-guiter_up/
+guitar_up/
 ├── lib/
 │   ├── main.dart                          # アプリのエントリーポイント
 │   ├── models/

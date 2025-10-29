@@ -66,7 +66,7 @@
          ▼
 ┌─────────────────────────────────┐
 │  SQLite Database                │
-│  (guiter_up.db)                 │
+│  (guitar_up.db)                 │
 │  - practice_records テーブル    │
 └─────────────────────────────────┘
 ```

@@ -23,7 +23,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace "com.example.guiter_up"
+    namespace "com.example.guitar_up"
     compileSdk 34
 
     compileOptions {
@@ -40,7 +40,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.guiter_up"
+        applicationId "com.example.guitar_up"
         minSdk 21
         targetSdk 34
         versionCode flutterVersionCode.toInteger()

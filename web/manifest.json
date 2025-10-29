@@ -1,6 +1,6 @@
 {
-    "name": "guiter_up",
-    "short_name": "guiter_up",
+    "name": "guitar_up",
+    "short_name": "guitar_up",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

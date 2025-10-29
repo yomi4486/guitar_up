@@ -10,7 +10,7 @@ class PracticeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GuiterUp - 練習'),
+        title: const Text('GuitarUp - 練習'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -32,7 +32,7 @@ class PracticeScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 16),
                       Text(
-                        'ようこそ GuiterUp へ',
+                        'ようこそ GuitarUp へ',
                         style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                               fontWeight: FontWeight.bold,
                             ),

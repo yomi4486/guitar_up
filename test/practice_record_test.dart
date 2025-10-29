@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:guiter_up/models/practice_record.dart';
+import 'package:guitar_up/models/practice_record.dart';
 
 void main() {
   group('PracticeRecord', () {

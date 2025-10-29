@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
 import '../services/practice_records_provider.dart';
 import 'practice_detail_screen.dart';
+import 'add_practice_screen.dart';
 
 class RecordsScreen extends StatelessWidget {
   const RecordsScreen({super.key});
@@ -11,7 +12,23 @@ class RecordsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GuiterUp - 記録'),
+        title: const Text('GuitarUp - 記録'),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () async {
+          final result = await Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const AddPracticeScreen()),
+          );
+
+          if (result == true) {
+            // If a new record was added, refresh the provider
+            final provider = Provider.of<PracticeRecordsProvider>(context, listen: false);
+            provider.loadRecords();
+          }
+        },
+        child: const Icon(Icons.add),
+        tooltip: '新しい記録を追加',
       ),
       body: Consumer<PracticeRecordsProvider>(
         builder: (context, provider, child) {

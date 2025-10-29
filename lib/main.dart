@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (_) => PracticeRecordsProvider()..loadRecords(),
       child: MaterialApp(
-        title: 'GuiterUp',
+        title: 'GuitarUp',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
             seedColor: Colors.deepPurple,

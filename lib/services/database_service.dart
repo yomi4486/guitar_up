@@ -18,7 +18,7 @@ class DatabaseService {
 
   Future<Database> _initDatabase() async {
     final databasesPath = await getDatabasesPath();
-    final path = join(databasesPath, 'guiter_up.db');
+    final path = join(databasesPath, 'guitar_up.db');
 
     return await openDatabase(
       path,
