@@ -1,4 +1,4 @@
-# GuiterUp
+# GuitarUp
 
 ギターの上達を記録できるFlutterアプリ
 
