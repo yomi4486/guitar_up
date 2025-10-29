@@ -1,0 +1,44 @@
+name: guiter_up
+description: ギターの上達を記録できるアプリ
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI
+  cupertino_icons: ^1.0.6
+  
+  # State Management & Navigation
+  provider: ^6.1.1
+  go_router: ^13.0.0
+  
+  # Storage
+  sqflite: ^2.3.2
+  path_provider: ^2.1.2
+  path: ^1.8.3
+  
+  # Video
+  camera: ^0.10.5+9
+  video_player: ^2.8.2
+  image_picker: ^1.0.7
+  
+  # Web
+  url_launcher: ^6.2.4
+  youtube_player_flutter: ^8.1.2
+  
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
