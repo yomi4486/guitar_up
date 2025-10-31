@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+// import 'package:provider/provider.dart';
 import 'add_practice_screen.dart';
-import '../services/practice_records_provider.dart';
+// import '../services/practice_records_provider.dart';
 
 class PracticeScreen extends StatelessWidget {
   const PracticeScreen({super.key});
